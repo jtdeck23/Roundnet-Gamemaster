@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+  <div class="container">
+    <header class="jumbotron">
+      <h1>The Players</h1>
+      <p>View the players</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="/playerBase/newPlayer">Add New Player</a>
+      </p>
+    </header>
+
+    <div class="row text-center" style="display: flex; flex-wrap: wrap;">
+      <% players.forEach(function(player) { %>
+        <div class="col-md-3 col-sm-6">
+          <div class="thumbnail">
+            <img src="<%= player.image %>">
+            <div class="caption">
+              <h4><%= player.name %></h4>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+
+<% include partials/footer %>

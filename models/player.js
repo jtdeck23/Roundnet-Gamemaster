@@ -14,6 +14,9 @@ const PlayerSchema = new Schema({
   },
   image: {
     type: String
+  },
+  bio: {
+    type: String
   }
 });
 

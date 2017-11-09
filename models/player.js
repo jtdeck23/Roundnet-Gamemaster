@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const PlayerSchema = new Schema({
   name: {
     type: String,
-    required: true
+    required: false
   },
   games: {
     type: Number
